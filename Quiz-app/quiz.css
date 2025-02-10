@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dac7c7, #f0e6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.app {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.app:hover {
+    transform: scale(1.05);
+}
+
+.head {
+    color: #0066ff;
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.qu {
+    font-size: 25px;
+    color: #414040;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.quiz {
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 15px;
+}
+
+.btn {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    font-weight: 600;
+    width: 90%;
+    margin: 2%;
+   
+  
+}
+
+.btn:hover:not([disabled]) {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+
+}
+.btn:disabled{
+    cursor : no-drop;
+}
+.nebt {
+    background: #3373d4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.nebt:hover {
+  
+   color: #3373d4;
+   background:  white;
+    transform:skew(1.1);
+    border: 1px solid  #3373d4;
+}
+.correct{
+    background: rgb(101, 147, 101);
+}
+.incorrect{
+    background: rgb(211, 138, 138);
+}
+
+@media (max-width: 500px) {
+    .app {
+        width: 100%;
+        padding: 20px;
+    }
+    .btn, .nebt {
+        font-size: 18px;
+    }
+}
